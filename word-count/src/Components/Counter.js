@@ -41,6 +41,7 @@ export default function Counter() {
       ></textarea>
 
       <p className="counts">
+      
         <strong>Character Count:</strong> {charCount}
         <br />
         <strong>Word Count:</strong> {wordCount}
@@ -49,7 +50,7 @@ export default function Counter() {
         <br />
         <strong>Paragraph Count:</strong> {paragraphCount}
         <br />
-        <strong>Press Enter to get Bigram count:</strong> {bigramCount}
+        <strong>*Press Enter* to get Bigram count:</strong> {bigramCount}
       </p>
     </div>
   );

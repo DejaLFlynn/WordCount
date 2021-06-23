@@ -1,6 +1,13 @@
 .text-area{
     font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
 }
 .counts{
     text-align: center;
+    font-size: 18px;
+
 }

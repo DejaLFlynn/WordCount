@@ -14,11 +14,16 @@ function App() {
 
   return (
     <div className="App" data-theme={darkMode ? "dark" : "light"} style={{height:'100vh', width:'100%'}}>
+      <div className="word-counter-title" >
+
       Word Counter
+      </div>
+      <div className="body-word-counter">
       <Counter />
       <button onClick={toggleDarkMode} className="myButton">
         {darkMode ? "Switch to Sunrise Mode" : "Switch to Sunset Mode"}
       </button>
+      </div>
     </div>
   );
 }
