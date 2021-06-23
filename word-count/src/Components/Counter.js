@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './Counter.css'
 
 export default function Counter() {
   const [text, setText] = useState("");
@@ -16,7 +17,6 @@ export default function Counter() {
     const countUniqueWords = () => {
       const words = new Set();
       let value = text;
-      console.log(text);
       value.toLowerCase().replace(/\w+/g, (word) => words.add(word));
       return words.size;
     };
@@ -32,9 +32,15 @@ export default function Counter() {
   const handleChange = (e) => setAllCounts(e.target.value);
   return (
     <div>
-      <textarea rows="15" onChange={handleChange} value={text}></textarea>
+     
+        
+      
+      <textarea rows="15"  onChange={handleChange} value={text}
+      className="text-area"
+      style={{width:'70%'}}
+      ></textarea>
 
-      <p>
+      <p className="counts">
         <strong>Character Count:</strong> {charCount}
         <br />
         <strong>Word Count:</strong> {wordCount}

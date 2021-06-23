@@ -13,11 +13,11 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="App" data-theme={darkMode ? "dark" : "light"}>
+    <div className="App" data-theme={darkMode ? "dark" : "light"} style={{height:'100vh', width:'100%'}}>
       Word Counter
       <Counter />
-      <button onClick={toggleDarkMode}>
-        {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      <button onClick={toggleDarkMode} className="myButton">
+        {darkMode ? "Switch to Sunrise Mode" : "Switch to Sunset Mode"}
       </button>
     </div>
   );
