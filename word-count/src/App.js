@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import WordCount from './Components/WordCount';
+import Counter from './Components/Counter';
 function App() {
   return (
     <div className="App">
       Word Counter
-     <WordCount/>
+     <Counter/>
     </div>
   );
 }
