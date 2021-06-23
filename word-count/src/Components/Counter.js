@@ -43,7 +43,7 @@ export default function Counter() {
         <br />
         <strong>Paragraph Count:</strong> {paragraphCount}
         <br />
-        <strong>Bigram Count:</strong> {bigramCount}
+        <strong>Press Enter to get Bigram count:</strong> {bigramCount}
       </p>
     </div>
   );
