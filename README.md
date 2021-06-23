@@ -13,5 +13,6 @@
 4. npm install to install all dependencies
 5. cd into word-count folder
 6. npm start to run in browser
-7. 
+7. Or visit https://priceless-goldstine-3c591f.netlify.app/
+8. Enjoy!
 
