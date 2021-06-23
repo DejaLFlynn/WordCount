@@ -14,30 +14,26 @@ export default function Counter() {
     const sentences = trimmedValue.split(".");
     const paragraphs = trimmedValue.split(/\r?\n|\r/);
     const countUniqueWords = () => {
-        const words = new Set();
-        let value = text
-        console.log(text)
-        value.toLowerCase().replace(/\w+/g, word => words.add(word));
-        return words.size;        
-    }
-    
-
+      const words = new Set();
+      let value = text;
+      console.log(text);
+      value.toLowerCase().replace(/\w+/g, (word) => words.add(word));
+      return words.size;
+    };
 
     setText(value);
     setCharCount(trimmedValue.length);
     setWordCount(value === "" ? 0 : words.length);
     setSentenceCount(value === "" ? 0 : sentences.length);
     setParagraphCount(value === "" ? 0 : paragraphs.length);
-    setBigramCount(countUniqueWords)
-    
- 
-
+    setBigramCount(countUniqueWords);
   };
 
   const handleChange = (e) => setAllCounts(e.target.value);
   return (
     <div>
       <textarea rows="15" onChange={handleChange} value={text}></textarea>
+
       <p>
         <strong>Character Count:</strong> {charCount}
         <br />
@@ -52,4 +48,3 @@ export default function Counter() {
     </div>
   );
 }
-
